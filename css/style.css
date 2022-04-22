@@ -208,7 +208,7 @@ h3{
     }
 
     .header__close:hover{
-        background-color:aquamarine ;
+        background-color: var(--hover-color) ;
     }
 
     .nav{
