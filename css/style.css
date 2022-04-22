@@ -148,6 +148,7 @@ h2{
     color: #151414;
     display: flex;
     justify-content: space-evenly;
+    transition: 2s linear ease;
 }
 
 .info-same{
