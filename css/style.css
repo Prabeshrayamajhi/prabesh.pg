@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 :root{
     --nav-color: #151414;
+    --hover-color: blueviolet;
 }
 
 *{
@@ -62,7 +63,7 @@ header{
 }
 
 .nav__link:hover{
-    background-color: rgb(118, 50, 1);
+    background-color: var(--hover-color);
     color: black;
 
 }
@@ -130,7 +131,7 @@ header{
 
 .contents .logo-container .fa-brands:hover{
     
-    background-color: blueviolet;
+    background-color: var(--hover-color);
     border-radius: 50%;
     color: white;
 }
