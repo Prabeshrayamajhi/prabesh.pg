@@ -213,7 +213,7 @@ h3{
 
     .header .links{
         position: absolute;
-        top: 10vh;
+        top: 7vh;
         right: -52%;
         width: 40%;
         height: 100vh;
@@ -226,7 +226,7 @@ h3{
 
     .header .links .link{
         font-size: 0.8rem;
-        margin: 3rem;
+        margin: 3rem 0;
     }
     
     .header .fa-bars{
