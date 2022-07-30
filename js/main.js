@@ -1,11 +1,8 @@
-const navMenu = document.getElementById("nav-menu"),
-  toggleMenu = document.getElementById("toggle-menu"),
-  closeMenu = document.getElementById("close-menu");
+const Links = document.querySelector(".header .links");
+const toggler = document.querySelector(".fa-bars");
 
-toggleMenu.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
-});
+console.log(toggler);
 
-closeMenu.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
+toggler.addEventListener("click", () => {
+  Links.classList.toggle("show");
 });

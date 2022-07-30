@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-
 :root{
     --nav-color: #151414;
     --hover-color: blueviolet;
@@ -14,9 +13,7 @@
     text-decoration: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
-
 }
-
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -26,89 +23,63 @@ body{
     height: 100vh;
 }
 
-header{
-    width: 100%;
-    padding: 0 15vw;
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--nav-color);
-    /* padding: 0.5rem 0px; */
-    align-items: center;
+.header{
     position: fixed;
-    z-index: 100;
-    /* background-color: blueviolet; */
     height: 10vh;
-}
-
-.logo{
+    width: 100%;
+    background-color: var(--nav-color);
+    padding: 0 20vw 0 15vw;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    /* background-color: green; */
+    z-index: 10;
 }
 
-.logo img {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-
-.header__logo{
-    color: white;
-    font-weight: 600;
-}
-
-.nav__list{
-    display: flex;
-    /* flex-direction: row; */
-    align-items: center;
-    /* border: 2px solid white; */
-    width: 450px;
-    margin-right: 8vh;
+.header .logo{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-/* .nav-item{
-    margin: 0 10px;
-    background-color: aqua;
-} */
+.header .logo img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
 
-.nav__link{
-    padding: 5px 10px;
+.header .logo h3{
+    font-size: 1.2rem;
+    color: blueviolet;
+    font-weight: 600;
+}
+
+.header .links{
+    height: 30px;
+    width: 400px;
+}
+
+.header .links .link{
+    margin-left: 30px;
     color: white;
+    font-size: 0.8rem;
+    transition: 0.8s;
+}
+
+.header .links .link:hover{
     font-size: 0.9rem;
-    font-weight: 500;
-    /* border-radius: 5px; */
+    color: blueviolet;
+    padding: 10px 0;
+    border-bottom: 5px solid blue;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.header .fa-bars, .header .fa-xmark{
     cursor: pointer;
-    transition: 0.6s;
-}
-
-.nav__list .nav__link:hover{
-    /* background-color: var(--hover-color); */
-    /* color: black; */
-    /* background-color: rgb(71, 21, 117); */
-    transition: 1s;
-    /* font-size: 1rem; */
-    color: blue;
-    padding-bottom: 10px;
-   
-    border-bottom: 4px solid blue;
-    /* animation: hoverhohai 0.1s linear infinite; */
-    
-}
-
-/* @keyframes hoverhohai{
-    100%{
-        border-bottom: 3px solid blue;
-    }
-} */
-
-
-.header__toggler, .header__close{
+    font-size: 1.8rem;
+    color: white;
     display: none;
 }
 
@@ -116,7 +87,6 @@ header{
 
 #particles-js{
     background-color: var(--nav-color);
-    /* height: 93.3vh; */
     height: 58.3vh;
     height: 100vh;
     overflow: hidden;
@@ -128,25 +98,20 @@ header{
 
 .same-cont{
     position:absolute;
-    /* width: 100%; */
+    margin: 5vh 0 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 500px;
     height: 450px;
-    /* border: 2px solid white; */
     background: none;
     border-radius:10px ;
     box-sizing: border-box;
-    /* height: 100vh; */
-    /* background: rgba(53, 53, 53, 0.1); */
-    /* background: none; */
 }
 
 .main-dp img{
-    /* position: absolute; */
     position: relative;
-    /* top: 25%; */
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -165,7 +130,6 @@ header{
 .contents{
     color: white;
     flex-direction: column;
-    /* margin-top: 15vh; */
 }
 
 .contents h1{
@@ -174,18 +138,12 @@ header{
     text-decoration: wavy;
     text-transform: capitalize;
     -webkit-text-stroke: 1px blue;
-    /* color: transparent; */
-    /* background-color: blue; */
-
 }
 
 .contents p{
     margin-top: 4px ;
     font-size: 0.8rem;
-    /* color: crimson; */
     font-weight: 600;
-    /* background-color: blueviolet ; */
-
 }
 
 .contents .logo-container {
@@ -194,21 +152,15 @@ header{
 }
 
 .contents .logo-container .fa-brands{
-    /* padding: 0 10px; */
     color: white;
     padding: 18px;
-    /* background-color: aqua; */
     height: 55px;
     transition: 0.6s;
 }
 
 .contents .logo-container .fa-brands:hover{
-    
-    /* background-color: var(--hover-color); */
-    /* border-radius: 50%; */
     color: blue;
     border-bottom: 4px solid blue;
-    
 }
 
 .aboutme{
@@ -232,80 +184,107 @@ footer{
     color: white;
     text-align: center;
 }
+
 h3{
     padding: 2vh;
     text-transform: capitalize;
 }
 
 
-@media  screen and (max-width:768px) {
-    header{
-        /* height: 48px; */
-        justify-content: space-between;
-        padding: 0 28px;
-        padding: 0 5vh;
-    }
+@media (max-width: 1130px){
 
-    .logo a{
-        font-size: 0.9rem;
-    }
-
-    .logo img{
-        width: 30px;
-        height: 30px;
-    }
-
-    .header__toggler{
-        display: inline;
-        color: white;
-        font-size: 2.2rem;
-    }
-
-    .header__close{
-        position: absolute;
-        right: 24px;
-        display: block;
-        font-size: 2rem;
-        border-radius: 50%;
-    }
-
-    .header__close:hover{
-        background-color: var(--hover-color) ;
-    }
-
-    .nav{
-        position: fixed;
-        top: 0;
-        right: -100%;
-        background-color: var(--nav-color);
-        color: white;
-        width: 50%;
-        height: 100vh;
-        padding: 15px 0;
-        z-index: 100;
-        transition: 0.5s;
+    .header{
+        padding: 0 15vw;
     }
 
     .nav__list{
+        width: 350px;
+    }
+
+}
+
+
+
+@media (max-width:768px) {
+    .header{
+        padding: 0 7vw;
+    }
+
+    .header .links{
+        position: absolute;
+        top: 10vh;
+        right: -52%;
+        width: 50%;
+        height: 100vh;
+        background-color: var(--nav-color);
         display: flex;
         flex-direction: column;
-        text-align: center;
-        justify-content: flex-start;
-        /* border: 2px solid white; */
-        height: 100vh;
-        width: 100%;
+        align-items: center;
+        transition: 0.5s ease;
     }
 
-    .nav-item{
-        margin: 3rem 0;
-        text-align: center;
-        transition: 0.5s;
+    .header .links .link{
+        font-size: 0.9rem;
+        margin: 3rem;
+    }
+    
+    .header .fa-bars{
+        display: inline-block;
     }
 
-    .show{
+    .header .show{
         right: 0;
     }
 
 }
 
 
+
+
+@media (max-width:612px){
+    .contents h1{
+        font-size: 2.5rem;
+    }
+
+    .contents p{
+        font-size: 0.7rem;
+    }
+}
+
+
+@media (max-width:515px){
+    .contents{
+        width: 400px;
+    }
+
+    .contents h1{
+        font-size: 2.1rem;
+    }
+
+    .contents p{
+        font-size: 0.7rem;
+    }
+}
+
+
+@media (max-width: 415px){
+    .contents{
+        width: 340px;
+    }
+
+    .contents .logo-container .fa-brands{
+        padding: 0;
+        margin: 0 10px;
+    }
+}
+    
+@media (max-width: 360px){
+    .contents{
+        width: 320px;
+    }
+
+    .contents h1{
+        font-family: 1.8rem;
+        font-size: 1.9rem;
+    }
+}
