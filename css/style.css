@@ -221,12 +221,13 @@ h3{
         display: flex;
         flex-direction: column;
         align-items: center;
-        transition: 0.3s ease;
+        transition: 0.5s ease;
     }
 
     .header .links .link{
         font-size: 0.8rem;
         margin: 3rem 0;
+        transition: 1s ease-out 1s cubic-bezier(25, 0.55, 0.675, 0.19);
     }
     
     .header .fa-bars{
