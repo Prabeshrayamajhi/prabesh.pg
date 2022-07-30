@@ -127,6 +127,11 @@ body{
     padding: 7px;
 }
 
+.contents .home-info{
+    text-align: center;
+}
+
+
 .contents{
     color: white;
     flex-direction: column;
@@ -166,6 +171,26 @@ body{
 .aboutme{
     background-color: blueviolet;
 }
+
+.about-me-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me-container p{
+    background-color: #151414;
+    /* height: 10vh; */
+    padding: 5vh 0;
+    border-radius: 8px;
+    width: 30vw;
+    color: white;
+    text-align: center;
+    justify-content: center;
+
+}
+
 
 .skills{
     background-color: green;
