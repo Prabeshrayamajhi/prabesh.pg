@@ -180,11 +180,12 @@ body{
 }
 
 .about-me-container p{
-    background-color: #151414;
+    /* background-color: #151414; */
+    background: rgba(0, 0, 0, 0.5);
     /* height: 10vh; */
     padding: 5vh 0;
     border-radius: 8px;
-    width: 30vw;
+    width: 50vw;
     color: white;
     text-align: center;
     justify-content: center;
