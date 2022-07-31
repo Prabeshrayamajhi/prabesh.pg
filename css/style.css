@@ -108,6 +108,7 @@ body{
     background: none;
     border-radius:10px ;
     box-sizing: border-box;
+    transition: 0.7s ease-out;
 }
 
 .main-dp img{
@@ -118,10 +119,11 @@ body{
     margin: 0 0 20px 0;
     background-color: white;
     padding: 5px;
-    transition: 0.7s;
+    transition: 1s ease-out 0.5s;
+    cursor: pointer;
 }
 
-.main-dp img:hover{
+.main-dp:hover img{
     height: 250px;
     width: 250px;
     padding: 7px;
@@ -169,29 +171,51 @@ body{
 }
 
 .aboutme{
-    background-color: blueviolet;
+    background-color:cadetblue;
 }
 
-.about-me-container{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.section{
+    padding: 10vh 0;
 }
 
-.about-me-container p{
-    /* background-color: #151414; */
-    background: rgba(0, 0, 0, 0.5);
-    /* height: 10vh; */
+/* .about-me-container{
+    border: 2px solid wheat;
+} */
+
+.about-me-container .heading{
     padding: 5vh 0;
+    /* background: rgba(0, 0, 0, 0.5); */
     border-radius: 8px;
-    width: 50vw;
     color: white;
     text-align: center;
     justify-content: center;
-
 }
 
+.about-me-container .heading h1{
+    font-size: 2rem;
+    position: relative;
+}
+
+.about-me-container .heading h1::after{
+    content: "";
+    height: 4px;
+    width: 7rem;
+    top: 100%;
+    right: 46.2%;
+    background-color: crimson;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.about-me-container .section-contents{
+    padding: 5vh 0;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.about-me-container .section-contents p{
+    text-align: center;
+}
 
 .skills{
     background-color: green;
@@ -205,7 +229,7 @@ body{
 footer{
     height: 15vh;
     background-color: var(--nav-color);
-    background-color: blueviolet;
+    background-color: black;
     font-size: 0.8rem;
     color: white;
     text-align: center;
