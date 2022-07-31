@@ -21,6 +21,7 @@ body{
 
 .section{
     height: 100vh;
+    padding: 10vh 0;
 }
 
 .header{
@@ -88,7 +89,7 @@ body{
 #particles-js{
     background-color: var(--nav-color);
     height: 58.3vh;
-    height: 100vh;
+    height: 93vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -174,9 +175,7 @@ body{
     background-color:cadetblue;
 }
 
-.section{
-    padding: 10vh 0;
-}
+
 
 /* .about-me-container{
     border: 2px solid wheat;
