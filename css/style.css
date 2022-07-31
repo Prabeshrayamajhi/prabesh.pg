@@ -174,15 +174,11 @@ body{
 
 .aboutme{
     background-color:rgb(214, 213, 213);
-    /* background-color: #151414; */
     position: relative;
 }
 
 .about-me-container{
-    /* background: rgba(0, 0, 0, 0.8); */
     height: 100%;
-    /* z-index: 100; */
-    /* z-index: -1; */
 }
 
 
@@ -199,7 +195,6 @@ body{
     font-size: 2rem;
     position: relative;
     color: black;
-    /* color: aliceblue; */
 }
 
 .about-me-container .heading h1::after{
@@ -232,18 +227,137 @@ body{
 }
 
 .about-me-container .section-contents p .inside-p-bold-link{
-    /* font-size: 1.5rem; */
     color: crimson;
-    /* border-bottom: 2px solid black; */
 }
 
 .skills{
-    background-color: white;
+    background-color: rgb(206, 206, 206);
 }
 
-.contactme{
-    background-color: blue;
+.skills .section-contents{
+   height: 65vh;
+   width: 100%;
+   padding: 5vh 15vw;
 }
+
+
+.skills .section-contents .projects-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.skills .section-contents .project{
+    flex: 1 1 15rem;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.skills .section-contents .project .project-image{
+    margin: 0 auto;
+    width: 80%;
+ }
+
+ .skills .section-contents .project .project-heading{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.skills .section-contents .project .project-image img{
+   margin: 0 auto;
+    height: 15rem;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.skills .section-contents .project .project-info{
+   width: 100%;
+}
+
+.skills .section-contents .project .project-info p{
+    margin: 10px auto;
+    width: 80%;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: 400;
+ }
+ 
+
+.contactme{
+    background-color: rgb(187, 187, 187);
+}
+
+.contactme .section-contents .contact-me-form{
+    margin: 10px auto;
+    height: 60vh;
+    width: 40%;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* margin: 5rem 0; */
+
+}
+
+.contactme .section-contents .contact-me-form .form{
+    margin: 1.8rem 0;
+}
+
+.contactme .section-contents .contact-me-form input{
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    outline: none;
+    background: transparent;
+    font-size: 0.8rem;
+    width: 75%;
+    color: black;
+    font-size: 1rem;
+}
+
+.contactme .section-contents .contact-me-form input::placeholder{
+    color: black;
+    font-size: 1rem;
+}
+
+.contactme .section-contents .contact-me-form textarea{
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    outline: none;
+    background: transparent;
+    font-size: 0.8rem;
+    width: 75%;
+}
+
+.contactme .section-contents .contact-me-form textarea::placeholder{
+    color: black;
+    font-size: 1rem;
+}
+
+.contactme .section-contents .contact-me-form button{
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid white;
+    transition: 0.4s ease-in;
+    cursor: pointer;
+}
+
+.contactme .section-contents .contact-me-form button:hover{
+    background: transparent;
+    border: 1px solid crimson;
+}
+
+
 
 
 footer{
@@ -271,7 +385,30 @@ h3{
         width: 350px;
     }
 
+    .contactme .section-contents .contact-me-form{
+        width: 50%;
+    }
+
 }
+
+
+@media (max-width: 1080px){
+    .skills{
+        height: 165vh;
+        padding: 0 10vw;
+    }
+
+    .skills .section-contents{
+        padding: 4vh 5vw;
+     }
+}
+
+@media (max-width: 880px){
+     .contactme .section-contents .contact-me-form{
+        width: 55%;
+    }
+}
+
 
 
 
@@ -284,7 +421,10 @@ h3{
     .section{
         padding: 7vh 0;
     }
-
+     
+    .skills{
+        height: 220vh;
+    }
     .header .links{
         position: absolute;
         top: 7vh;
@@ -325,11 +465,18 @@ h3{
         letter-spacing: 1px;
         font-size: 0.8rem;
     }
-
+    
+    .contactme .section-contents .contact-me-form{
+        width: 60%;
+    }
 }
 
 
-
+@media (max-width: 756px){
+    .skills{
+        height: 230vh;
+    }
+}
 
 @media (max-width:612px){
     .contents h1{
@@ -358,8 +505,17 @@ h3{
     .contents p{
         font-size: 0.7rem;
     }
+
+    .contactme .section-contents .contact-me-form{
+        width: 75%;
+    }
 }
 
+@media (max-width: 437px){
+    .skills{
+        height: 240vh;
+    }
+}
 
 @media (max-width: 415px){
     .contents{
