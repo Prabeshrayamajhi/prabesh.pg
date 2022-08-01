@@ -175,6 +175,7 @@ body{
 .aboutme{
     background-color:rgb(214, 213, 213);
     position: relative;
+    height: 105vh;
 }
 
 .about-me-container{
@@ -507,7 +508,7 @@ h3{
     }
 
     .contactme .section-contents .contact-me-form{
-        width: 75%;
+        width: 90%;
     }
 }
 
